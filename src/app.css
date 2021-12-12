@@ -1,0 +1,46 @@
+@import '@fontsource/fira-mono';
+
+:root {
+  --gray-100: #F0F0F0;
+  --gray-200: #D5CCCC;
+  --gray-300: #A19595;
+  --gray-500: #5D5A5A;
+  --gray-600: #4C4C4C;
+  --gray-700: #262525;
+  --color-purple: #885E98;
+  --color-teal: #3EA89B;
+
+  --background-color: #fff;
+  --primary-text-color: #000;
+
+  --border-color-100: var(--gray-100);
+  --border-color-200: var(--gray-200);
+  --border-color-300: var(--gray-300);
+
+  font-family: 'Nunito', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000;
+    --primary-text-color: #fff;
+
+    --border-color-100: var(--gray-700);
+    --border-color-200: var(--gray-600);
+    --border-color-300: var(--gray-300);
+  }
+}
+
+html {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+}
+
